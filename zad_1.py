@@ -1,8 +1,8 @@
 # Zaimportuj create_engine
-
+from sqlalchemy import create_engine
 
 # Stwórz silnik do pliku census.sqlite
-engine = ____
+engine = create_engine('sqlite:///census.sqlite')
 
 # Wyświetl nazwy tabel
-print(____)
+print(engine.table_names())
