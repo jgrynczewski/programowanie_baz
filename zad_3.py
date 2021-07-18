@@ -6,11 +6,11 @@ engine = create_engine('sqlite:///census.sqlite')
 
 metadata = MetaData()
 
-# Reflect the census table from the engine: census
+# Odbij tabelę census
 census = ____(____, ____, autoload=____, autoload_with=____)
 
-# Print the column names
+# Wyświetl nazwy kolumn
 print(____)
 
-# Print full metadata of census
+# Wyświetl pełne metadane o tabeli census
 print(repr(____))

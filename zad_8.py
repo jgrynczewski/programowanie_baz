@@ -8,15 +8,15 @@ engine = create_engine('sqlite:///census.sqlite')
 metadata = MetaData()
 census = Table('census', metadata, autoload=True, autoload_with=engine)
 
-# Create a select query: stmt
+# Stwórz zapytanie select
 stmt = ____
 
-# Add a where clause to filter the results to only those for New York : stmt_filtered
+# Dodaj warunek na stan, interesują Cię tylko wpisy dla stanu - New York
 stmt = stmt.____
 
-# Execute the query to retrieve all the data returned: results
+# Wykonaj zapytanie i pobierz wynik
 results = ____
 
-# Loop over the results and print the age, sex, and pop2000
+# Przeiteruj się po wyniku i wyświetl wartości kolumn: age, sex i pop2000
 for ___ in ____:
     print(result.age, ____, ____)

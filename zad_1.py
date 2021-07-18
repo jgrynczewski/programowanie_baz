@@ -1,8 +1,8 @@
-# Import create_engine
+# Zaimportuj create_engine
 
 
-# Create an engine that connects to the census.sqlite file: engine
+# Stwórz silnik do pliku census.sqlite
 engine = ____
 
-# Print table names
+# Wyświetl nazwy tabel
 print(____)

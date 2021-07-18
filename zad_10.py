@@ -3,27 +3,25 @@ from sqlalchemy import MetaData
 from sqlalchemy import Table
 from sqlalchemy import select
 
-# Wracamy do lokalnej kopii
 engine = create_engine('sqlite:///census.sqlite')
 connection = engine.connect()
 
 metadata = MetaData()
 census = Table('census', metadata, autoload=True, autoload_with=engine)
 
-# Import and_
+# Zaimportuj funkcję and_
 from ____ import ____
 
-# Build a query for the census table: stmt
+# Zbuduj zapytanie
 stmt = select(____)
 
-# Append a where clause to select only non-male records from California using and_
+# Dodaj warunek. Interesują Cię tylko wpisy, które nie dotyczą mężczyzn w stanie California. Użyj funkcji and_()
 stmt = stmt.where(
-    # The state of California with a non-male sex
     ____(census.columns.state == ____,
          census.columns.sex != ____
          )
 )
 
-# Loop over the ResultProxy printing the age and sex
+# Przeiteruj się po ResultProxu i wyświetl wiek oraz płeć dla każdego otrzymanego wpisu
 for result in ____:
     print(____, ____)

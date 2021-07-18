@@ -1,8 +1,8 @@
-# Import create_engine function
+# Zaimportuj funkcję create_engine
 from ____ import create_engine
 
-# Create an engine to the census database
+# Stwórz silnik do bazy postgresql
 engine = create_engine(____)
 
-# Use the .table_names() method on the engine to print the table names
+# Użuj metody .table_names() silnika, żeby wyświetlić nazwy tabeli w bazie
 print(____)

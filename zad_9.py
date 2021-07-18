@@ -10,15 +10,15 @@ connection = engine.connect()
 metadata = MetaData()
 census = Table('census', metadata, autoload=True, autoload_with=engine)
 
-# Define a list of states for which we want results
+# Lista instersujących Cię stanów
 states = ['New York', 'California', 'Texas']
 
-# Create a query for the census table: stmt
+# Stwórz zapytanie dla tabeli census
 stmt = select(____)
 
-# Append a where clause to match all the states in_ the list states
+# Dodaj warunek: interesują Cię tylko te wpisy, dla których stan znajduje się na liście states. Użyj funkcji in_()
 stmt = stmt.where(____)
 
-# Loop over the ResultProxy and print the state and its population in 2000
+# Przeiteruj się po ResultingProxy i dla każdego otrzymanego wpisu wyświetl odpowiadający mu stan i stan populacji na rok 2000
 for ____ in connection.execute(____):
     print(____, ____)

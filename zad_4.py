@@ -1,14 +1,14 @@
 from sqlalchemy import create_engine
 engine = create_engine('sqlite:///census.sqlite')
 
-# Create a connection on engine
+# Stwórz połączenie z bazą
 connection = ___
 
-# Build select statement for census table: stmt
+# Zbuduj instrukcję select do tabeli census
 stmt = ____
 
-# Execute the statement and fetch the results: results
+# Wykonaj zapytanie i pobierz wynik
 results = ____
 
-# Print results
+# Wyświetl wynik
 print(____)

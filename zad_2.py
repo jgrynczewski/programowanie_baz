@@ -1,16 +1,16 @@
-# Import create_engine, MetaData, and Table
+# Zaimportuj create_engine, MetaData, and Table
 from sqlalchemy import create_engine
 from sqlalchemy import ____
 from sqlalchemy import ____
 
-# Create engine: engine
+# Stwórz silnik
 engine = create_engine('sqlite:///census.sqlite')
 
-# Create a metadata object: metadata
+# Stwórz obiekt z metadanymi
 metadata = ____
 
-# Reflect census table from the engine: census
+# Odbij tabelę census z bazy
 census = Table(____, ____, autoload=____, autoload_with=____)
 
-# Print census table metadata
+# Wyświetl metadatane o tabeli census
 print(____)

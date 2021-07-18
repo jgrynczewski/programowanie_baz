@@ -3,21 +3,20 @@ from sqlalchemy import MetaData
 from sqlalchemy import Table
 from sqlalchemy import select
 
-# Wracamy do lokalnej kopii
 engine = create_engine('sqlite:///census.sqlite')
 connection = engine.connect()
 
 metadata = MetaData()
 census = Table('census', metadata, autoload=True, autoload_with=engine)
 
-# Build a query to select the state column: stmt
+# Zbuduj zaptyanie o wartość kolumny 'state'
 stmt = ____
 
-# Order stmt by the state column
+# Wynik uporządkuj rosnąco, alfabetycznie po kolumnie stan
 stmt = ____
 
-# Execute the query and store the results: results
+# Wykonaj zapytanie, wynik zapisz do zmiennej results
 results = ____
 
-# Print the first 10 results
+# Wyświetl pierwsze 10 wyników
 print(____[:10])

@@ -7,20 +7,20 @@ connection = engine.connect()
 
 metadata = MetaData()
 
-# Import select
+# Zaimportuj funkcję select
 from ____ import ____
 
-# Reflect census table via engine: census
+# Odbij tabelę census
 census = Table('census', metadata, autoload=True, autoload_with=engine)
 
-# Build select statement for census table: stmt
+# Zbuduj zapytanie select na tabeli census
 stmt = ____
 
-# Print the emitted statement to see the SQL string
+# Wyświetl instrukcję, w celu sprawdzenia wygenerowanej sqlki
 print(stmt)
 
-# Execute the statement on connection and fetch 10 records: result
+# Wykonaj instrukcję na połąceniu i pobierz tylko 10 wpisów
 results = ____.____(____).____(size=___)
 
-# Execute the statement and print the results
+# Wykonaj instrukcję i wyświetl wynik.
 print(results)
